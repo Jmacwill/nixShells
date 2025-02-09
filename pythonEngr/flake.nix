@@ -13,7 +13,7 @@
   {
     devShells."x86_64-linux".default = pkgs.mkShell {
       shellHook = ''
-	echo "Welcome to the pythonEngr shell";
+	echo "Welcome to the pythonEngr shell test";
       '';
 
       packages = [
