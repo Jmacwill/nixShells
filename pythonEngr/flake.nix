@@ -26,6 +26,7 @@
 
           # scientific computing
           pandas # Data structures & tools
+	  openpyxl # Python excel stuff
           sympy # Symbolic math
           numpy # Array & matrices
           scipy # Integral, solving differential, equations, optimizations)
