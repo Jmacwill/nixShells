@@ -1,2 +1,3 @@
 # nixShells
-Nix development shells for projects.
+
+Nix development shells for projects. add Direnv next
