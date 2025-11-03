@@ -21,7 +21,7 @@
         pyproject = true;
         nativeBuildInputs = [
           pkgs.python313.pkgs.setuptools
-          pkgs.python313.pkgs.setuptools_scm
+          pkgs.python313.pkgs.setuptools-scm
           pkgs.python313.pkgs.hatchling
           pkgs.python313.pkgs.hatch-jupyter-builder
           pkgs.python313.pkgs.hatch-nodejs-version
