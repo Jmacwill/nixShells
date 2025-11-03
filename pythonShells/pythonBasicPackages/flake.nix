@@ -13,6 +13,15 @@
   in
   {
     lib.pythonPackages = with pkgs.python313Packages; [
+      jupyter
+      jupyterlab
+      #jupyterlab-vim
+      jaraco-context
+      ipykernel
+      ipython
+      pikepdf
+
+
       numpy # Array & matrices
       pandas # Data structures & tools
       openpyxl # Python excel stuff
