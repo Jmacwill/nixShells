@@ -1,5 +1,5 @@
 {
-  description = "All this does is provide python to other flakes";
+  description = "All this does is provide python to other flake. Note that python flakes should follow this flake's nixpkgs";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";

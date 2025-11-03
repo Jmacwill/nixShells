@@ -2,7 +2,7 @@
   description = "Provides pythonPackages for dev shells";
 
   inputs = {
-    pythonCore.url = "github:cmacwill1/nixShells?dir=pythonCore";
+    pythonCore.url = "github:cmacwill1/nixShells?dir=pythonShells/pythonCore";
     nixpkgs.follows = "pythonCore/nixpkgs";
   };
 

@@ -1,0 +1,113 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1761907660,
+        "narHash": "sha256-kJ8lIZsiPOmbkJypG+B5sReDXSD1KGu2VEPNqhRa/ew=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "2fb006b87f04c4d3bdf08cfdbc7fab9c13d94a15",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1761907660,
+        "narHash": "sha256-kJ8lIZsiPOmbkJypG+B5sReDXSD1KGu2VEPNqhRa/ew=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "2fb006b87f04c4d3bdf08cfdbc7fab9c13d94a15",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "pythonCore": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "dir": "pythonCore",
+        "lastModified": 1762131604,
+        "narHash": "sha256-j7lvGUHF6MemQhD3Vl/85+zfIHhdmfeuwyYZkaw+G6k=",
+        "owner": "cmacwill1",
+        "repo": "nixShells",
+        "rev": "a4fcb4e9a72f201cc20922ceab0df52d8cc3a43e",
+        "type": "github"
+      },
+      "original": {
+        "dir": "pythonCore",
+        "owner": "cmacwill1",
+        "repo": "nixShells",
+        "type": "github"
+      }
+    },
+    "pythonCore_2": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "dir": "pythonCore",
+        "lastModified": 1762131398,
+        "narHash": "sha256-v+ncbKO/f0F/FgPAN1zKdI2T+Xc0bFkXpZ2FcxL9FDA=",
+        "owner": "cmacwill1",
+        "repo": "nixShells",
+        "rev": "acd42e8b507df5d7d2259cfdcfd34ab6fe27fdcf",
+        "type": "github"
+      },
+      "original": {
+        "dir": "pythonCore",
+        "owner": "cmacwill1",
+        "repo": "nixShells",
+        "type": "github"
+      }
+    },
+    "pythonPackages": {
+      "inputs": {
+        "nixpkgs": [
+          "pythonPackages",
+          "pythonCore",
+          "nixpkgs"
+        ],
+        "pythonCore": "pythonCore_2"
+      },
+      "locked": {
+        "dir": "pythonBasicPackages",
+        "lastModified": 1762131604,
+        "narHash": "sha256-j7lvGUHF6MemQhD3Vl/85+zfIHhdmfeuwyYZkaw+G6k=",
+        "owner": "cmacwill1",
+        "repo": "nixShells",
+        "rev": "a4fcb4e9a72f201cc20922ceab0df52d8cc3a43e",
+        "type": "github"
+      },
+      "original": {
+        "dir": "pythonBasicPackages",
+        "owner": "cmacwill1",
+        "repo": "nixShells",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": [
+          "pythonCore",
+          "nixpkgs"
+        ],
+        "pythonCore": "pythonCore",
+        "pythonPackages": "pythonPackages"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
