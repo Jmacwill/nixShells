@@ -100,6 +100,22 @@
         "type": "github"
       }
     },
+    "nixpkgs_6": {
+      "locked": {
+        "lastModified": 1761907660,
+        "narHash": "sha256-kJ8lIZsiPOmbkJypG+B5sReDXSD1KGu2VEPNqhRa/ew=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "2fb006b87f04c4d3bdf08cfdbc7fab9c13d94a15",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "pythonAbaqus": {
       "inputs": {
         "nixpkgs": [
@@ -152,7 +168,7 @@
     },
     "pythonCore": {
       "inputs": {
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_3"
       },
       "locked": {
         "dir": "pythonShells/pythonCore",
@@ -172,7 +188,7 @@
     },
     "pythonCore_2": {
       "inputs": {
-        "nixpkgs": "nixpkgs_3"
+        "nixpkgs": "nixpkgs_4"
       },
       "locked": {
         "dir": "pythonShells/pythonCore",
@@ -192,7 +208,7 @@
     },
     "pythonCore_3": {
       "inputs": {
-        "nixpkgs": "nixpkgs_4"
+        "nixpkgs": "nixpkgs_5"
       },
       "locked": {
         "dir": "pythonShells/pythonCore",
@@ -212,7 +228,7 @@
     },
     "pythonCore_4": {
       "inputs": {
-        "nixpkgs": "nixpkgs_5"
+        "nixpkgs": "nixpkgs_6"
       },
       "locked": {
         "dir": "pythonShells/pythonCore",
@@ -258,10 +274,7 @@
     "root": {
       "inputs": {
         "latexMain": "latexMain",
-        "nixpkgs": [
-          "pythonCore",
-          "nixpkgs"
-        ],
+        "nixpkgs": "nixpkgs_2",
         "pythonAbaqus": "pythonAbaqus",
         "pythonBasicPackages": "pythonBasicPackages",
         "pythonCore": "pythonCore_3",

@@ -7,20 +7,20 @@
     pythonNotebook.url = "github:cmacwill1/nixShells?dir=pythonShells/pythonNotebook";
     pythonAbaqus.url = "github:cmacwill1/nixShells?dir=pythonShells/pythonAbaqus";
     latexMain.url = "github:cmacwill1/nixShells?dir=latexShells/latexMain";
-    nixpkgs.follows = "pythonCore/nixpkgs";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
   };
 
-  outputs = { self, pythonCore, pythonBasicPackages, pythonNotebook, pythonAbaqus, latexMain, nixpkgs }:
+  outputs = { self,  nixpkgs, ... }@inputs:
   let
     system = "x86_64-linux";
 
     pkgs = nixpkgs.legacyPackages.${system};
-    python = pythonCore.packages.${system}.default;
-    latex = latexMain.packages.${system}.default;
+    python = inputs.pythonCore.packages.${system}.default;
+    latex = inputs.latexMain.packages.${system}.default;
 
-    allPythonPackages = pythonBasicPackages.lib.pythonPackages
-                        ++ pythonNotebook.lib.pythonPackages
-                        ++ pythonAbaqus.lib.pythonPackages;
+    allPythonPackages = inputs.pythonBasicPackages.lib.pythonPackages
+                        ++ inputs.pythonNotebook.lib.pythonPackages
+                        ++ inputs.pythonAbaqus.lib.pythonPackages;
   in
   {
     devShells.${system}.default = pkgs.mkShell {
