@@ -22,11 +22,11 @@
       },
       "locked": {
         "dir": "pythonCore",
-        "lastModified": 1762130883,
-        "narHash": "sha256-K/XidJjDEj5/90UOa517YEaNtDeKv7MANp+gHvGP22A=",
+        "lastModified": 1762131163,
+        "narHash": "sha256-VTjdqmB9hYVEBJhqGJiCP+r87aHmRZAsPugxWJqTiHU=",
         "owner": "cmacwill1",
         "repo": "nixShells",
-        "rev": "f7874eb60d2438e08dc6bb26843cd45bde047d1e",
+        "rev": "04f98bf42453dcd049f34fdd8182369d543db2e0",
         "type": "github"
       },
       "original": {
