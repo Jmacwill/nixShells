@@ -38,12 +38,12 @@
           setuptools-scm
           wheel
         ];
-        propagatedBuildInputs = with pkgs.python313.pkgs; [
+        propagatedBuildInputs = [
           self.auto-all
-          fire
-          pydantic
-          typeguard
-          typing-extensions
+          pkgs.python313Packages.fire
+          pkgs.python313Packages.pydantic
+          pkgs.python313Packages.typeguard
+          pkgs.python313Packages.typing-extensions
         ];
       };
     };
