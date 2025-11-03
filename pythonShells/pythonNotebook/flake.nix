@@ -1,5 +1,5 @@
 {
-  description = "Provides pythonPackages for dev shells";
+  description = "Provides jupyter notebooks (with vim extension) for python dev shells";
 
   inputs = {
     pythonCore.url = "github:cmacwill1/nixShells?dir=pythonShells/pythonCore";
