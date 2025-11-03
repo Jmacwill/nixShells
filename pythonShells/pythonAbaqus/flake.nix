@@ -39,7 +39,7 @@
           wheel
         ];
         propagatedBuildInputs = with pkgs.python313.pkgs; [
-          auto-all
+          self.auto-all
           fire
           pydantic
           typeguard
