@@ -3,7 +3,7 @@
 
   inputs = {
     pythonCore.url = "github:cmacwill1/nixShells?dir=pythonCore";
-    nixpkgs.follows = "pythonCore";
+    nixpkgs.follows = "pythonCore/nixpkgs";
   };
 
   outputs = { self, pythonCore, nixpkgs}:

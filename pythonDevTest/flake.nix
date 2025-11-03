@@ -4,7 +4,7 @@
   inputs = {
     pythonCore.url = "github:cmacwill1/nixShells?dir=pythonCore";
     pythonPackages.url = "github:cmacwill1/nixShells?dir=pythonBasicPackages";
-    nixpkgs.follows = "pythonCore";
+    nixpkgs.follows = "pythonCore/nixpkgs";
   };
 
   outputs = { self, inputs, nixpkgs, }:

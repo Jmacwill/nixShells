@@ -22,11 +22,11 @@
       },
       "locked": {
         "dir": "pythonCore",
-        "lastModified": 1762131231,
-        "narHash": "sha256-pNVZGnqVwLmhSBuTTiwRD3ho1uZPCi96ZSrs9cQxqcc=",
+        "lastModified": 1762131398,
+        "narHash": "sha256-v+ncbKO/f0F/FgPAN1zKdI2T+Xc0bFkXpZ2FcxL9FDA=",
         "owner": "cmacwill1",
         "repo": "nixShells",
-        "rev": "1f05d2c945e6d3a641f1c88f95aa9864e0c86d26",
+        "rev": "acd42e8b507df5d7d2259cfdcfd34ab6fe27fdcf",
         "type": "github"
       },
       "original": {
@@ -39,7 +39,8 @@
     "root": {
       "inputs": {
         "nixpkgs": [
-          "pythonCore"
+          "pythonCore",
+          "nixpkgs"
         ],
         "pythonCore": "pythonCore"
       }
