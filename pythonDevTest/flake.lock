@@ -1,5 +1,25 @@
 {
   "nodes": {
+    "latexMain": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "dir": "latexShells/latexMain",
+        "lastModified": 1762132582,
+        "narHash": "sha256-H9qCXRLFT7RLp4VneS9ZbUqIBJ4EGxpzRJnP3Rdj82E=",
+        "owner": "cmacwill1",
+        "repo": "nixShells",
+        "rev": "a7db25d029dca5149e7087251caf2f9b53820021",
+        "type": "github"
+      },
+      "original": {
+        "dir": "latexShells/latexMain",
+        "owner": "cmacwill1",
+        "repo": "nixShells",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1761907660,
@@ -32,17 +52,33 @@
         "type": "github"
       }
     },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1761907660,
+        "narHash": "sha256-kJ8lIZsiPOmbkJypG+B5sReDXSD1KGu2VEPNqhRa/ew=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "2fb006b87f04c4d3bdf08cfdbc7fab9c13d94a15",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "pythonCore": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs_2"
       },
       "locked": {
         "dir": "pythonShells/pythonCore",
-        "lastModified": 1762132290,
-        "narHash": "sha256-qkxeruQgZtZCkkpK/uGHojogc38M/MIGTU7ZSzYnh4E=",
+        "lastModified": 1762132582,
+        "narHash": "sha256-H9qCXRLFT7RLp4VneS9ZbUqIBJ4EGxpzRJnP3Rdj82E=",
         "owner": "cmacwill1",
         "repo": "nixShells",
-        "rev": "c5f027cd7368556638d99254c768bb2bd8566ca5",
+        "rev": "a7db25d029dca5149e7087251caf2f9b53820021",
         "type": "github"
       },
       "original": {
@@ -54,7 +90,7 @@
     },
     "pythonCore_2": {
       "inputs": {
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_3"
       },
       "locked": {
         "dir": "pythonShells/pythonCore",
@@ -83,11 +119,11 @@
       },
       "locked": {
         "dir": "pythonShells/pythonBasicPackages",
-        "lastModified": 1762132290,
-        "narHash": "sha256-qkxeruQgZtZCkkpK/uGHojogc38M/MIGTU7ZSzYnh4E=",
+        "lastModified": 1762132582,
+        "narHash": "sha256-H9qCXRLFT7RLp4VneS9ZbUqIBJ4EGxpzRJnP3Rdj82E=",
         "owner": "cmacwill1",
         "repo": "nixShells",
-        "rev": "c5f027cd7368556638d99254c768bb2bd8566ca5",
+        "rev": "a7db25d029dca5149e7087251caf2f9b53820021",
         "type": "github"
       },
       "original": {
@@ -99,6 +135,7 @@
     },
     "root": {
       "inputs": {
+        "latexMain": "latexMain",
         "nixpkgs": [
           "pythonCore",
           "nixpkgs"
