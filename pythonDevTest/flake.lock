@@ -37,16 +37,16 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "dir": "pythonCore",
-        "lastModified": 1762131604,
-        "narHash": "sha256-j7lvGUHF6MemQhD3Vl/85+zfIHhdmfeuwyYZkaw+G6k=",
+        "dir": "pythonShells/pythonCore",
+        "lastModified": 1762132290,
+        "narHash": "sha256-qkxeruQgZtZCkkpK/uGHojogc38M/MIGTU7ZSzYnh4E=",
         "owner": "cmacwill1",
         "repo": "nixShells",
-        "rev": "a4fcb4e9a72f201cc20922ceab0df52d8cc3a43e",
+        "rev": "c5f027cd7368556638d99254c768bb2bd8566ca5",
         "type": "github"
       },
       "original": {
-        "dir": "pythonCore",
+        "dir": "pythonShells/pythonCore",
         "owner": "cmacwill1",
         "repo": "nixShells",
         "type": "github"
@@ -57,16 +57,16 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "dir": "pythonCore",
-        "lastModified": 1762131398,
-        "narHash": "sha256-v+ncbKO/f0F/FgPAN1zKdI2T+Xc0bFkXpZ2FcxL9FDA=",
+        "dir": "pythonShells/pythonCore",
+        "lastModified": 1762132244,
+        "narHash": "sha256-6mdbjynUYmJemuMD5LPuSVg7feq0iG9VN4jdB3o7W0Y=",
         "owner": "cmacwill1",
         "repo": "nixShells",
-        "rev": "acd42e8b507df5d7d2259cfdcfd34ab6fe27fdcf",
+        "rev": "1b20a4f745c7c663b9c7c86339af27558ac7eaff",
         "type": "github"
       },
       "original": {
-        "dir": "pythonCore",
+        "dir": "pythonShells/pythonCore",
         "owner": "cmacwill1",
         "repo": "nixShells",
         "type": "github"
@@ -82,16 +82,16 @@
         "pythonCore": "pythonCore_2"
       },
       "locked": {
-        "dir": "pythonBasicPackages",
-        "lastModified": 1762131604,
-        "narHash": "sha256-j7lvGUHF6MemQhD3Vl/85+zfIHhdmfeuwyYZkaw+G6k=",
+        "dir": "pythonShells/pythonBasicPackages",
+        "lastModified": 1762132290,
+        "narHash": "sha256-qkxeruQgZtZCkkpK/uGHojogc38M/MIGTU7ZSzYnh4E=",
         "owner": "cmacwill1",
         "repo": "nixShells",
-        "rev": "a4fcb4e9a72f201cc20922ceab0df52d8cc3a43e",
+        "rev": "c5f027cd7368556638d99254c768bb2bd8566ca5",
         "type": "github"
       },
       "original": {
-        "dir": "pythonBasicPackages",
+        "dir": "pythonShells/pythonBasicPackages",
         "owner": "cmacwill1",
         "repo": "nixShells",
         "type": "github"
