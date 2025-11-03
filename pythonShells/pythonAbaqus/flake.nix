@@ -10,7 +10,7 @@
   let
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
-    myPython313Packages = pkgs.python313Packages // {
+    myOverrides = rec {
       auto-all = pkgs.python313.pkgs.buildPythonPackage rec {
         pname = "auto-all";
         version = "1.4.1";
@@ -39,7 +39,7 @@
           wheel
         ];
         propagatedBuildInputs = [
-          self.auto-all
+          auto-all
           pkgs.python313Packages.fire
           pkgs.python313Packages.pydantic
           pkgs.python313Packages.typeguard
@@ -47,7 +47,7 @@
         ];
       };
     };
-
+  myPython313Packages = pkgs.python313Packages // myOverrides;
   in
   {
     lib.pythonPackages = with myPython313Packages; [
