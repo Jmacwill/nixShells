@@ -1,0 +1,51 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1761907660,
+        "narHash": "sha256-kJ8lIZsiPOmbkJypG+B5sReDXSD1KGu2VEPNqhRa/ew=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "2fb006b87f04c4d3bdf08cfdbc7fab9c13d94a15",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "pythonCore": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "dir": "pythonShells/pythonCore",
+        "lastModified": 1762136312,
+        "narHash": "sha256-3Js7tp8TDN7Ajq/3mgmIP05aXro1LJIZcl4g2i/uf9E=",
+        "owner": "cmacwill1",
+        "repo": "nixShells",
+        "rev": "0765afd053e26decb210f7c0534a69531236738d",
+        "type": "github"
+      },
+      "original": {
+        "dir": "pythonShells/pythonCore",
+        "owner": "cmacwill1",
+        "repo": "nixShells",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": [
+          "pythonCore",
+          "nixpkgs"
+        ],
+        "pythonCore": "pythonCore"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
